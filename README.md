@@ -96,14 +96,7 @@ copy .env.example .env
 Actualizar el archivo `.env` con las credenciales de su base de datos PostgreSQL local:
 
 ```env
-SECRET_KEY=Imparable7
-DEBUG=True
 
-DB_NAME=SIPeIP_db
-DB_USER=postgres
-DB_PASSWORD=Imparable7
-DB_HOST=localhost
-DB_PORT=5432
 ```
 
 Ejecutar las migraciones iniciales de la base de datos:
