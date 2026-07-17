@@ -156,7 +156,7 @@ Desde la raíz del repositorio:
 
 ```powershell
 cd backend
-py -3.11 -m venv .venv
+py -3.12 -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install -r requirements.txt
 Copy-Item .env.example .env
