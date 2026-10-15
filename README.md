@@ -125,7 +125,7 @@ Los avances solo pueden registrarse después de aprobar el plan, sobre indicador
 | Alineación    | Catálogos PND/ODS, matriz estratégica, uso real y validación durante la revisión  |
 | Proyectos     | Proyectos de inversión, cronograma, hitos y seguimiento                         |
 | Reportes      | Vista previa y exportación con filtros autorizados                              |
-| Auditoría     | Consulta de accesos, cambios y resultados de operaciones                        |
+| Auditoría     | Consulta de accesos, cambios y resultados de operaciones                       |
 
 ## Estructura principal
 
