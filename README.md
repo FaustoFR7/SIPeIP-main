@@ -461,7 +461,7 @@ Comprueba que el reporte de planes de un usuario externo excluye registros de ot
 Ran 1 test in ...
 
 OK
-``
+```
 
 Para otro caso del Excel, consulte las columnas **Archivo** y **Clase y método** de la hoja **Pruebas automatizadas**. Convierta el archivo en su módulo de Python: quite `backend/` y `.py`, y sustituya `/` por `.`. Añada un punto y la clase y método indicados. Esa referencia completa sustituye a `tests.test_api_essential.SipeipApiEssentialTests.test_reporte_no_filtra_datos_de_otra_institucion` en el comando anterior; conserve las demás opciones.
 
