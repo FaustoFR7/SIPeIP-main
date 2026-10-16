@@ -30,7 +30,7 @@ Los cambios de estado se ejecutan mediante acciones autorizadas. No se permite a
 
 ### Backend
 
-- Python 3.11
+- Python 3.12
 - Django 5.2.15
 - Django REST Framework 3.17.1
 - PostgreSQL
@@ -125,7 +125,7 @@ Los avances solo pueden registrarse después de aprobar el plan, sobre indicador
 | Alineación    | Catálogos PND/ODS, matriz estratégica, uso real y validación durante la revisión  |
 | Proyectos     | Proyectos de inversión, cronograma, hitos y seguimiento                         |
 | Reportes      | Vista previa y exportación con filtros autorizados                              |
-| Auditoría     | Consulta de accesos, cambios y resultados de operaciones                       |
+| Auditoría     | Consulta de accesos, cambios y resultados de operaciones                        |
 
 ## Estructura principal
 
@@ -168,7 +168,7 @@ SIPeIP/
 
 ## Requisitos locales
 
-- Python 3.11 o superior compatible
+- Python 3.12 o superior compatible
 - Node.js 18 o superior
 - npm
 - PostgreSQL en ejecución
@@ -195,7 +195,7 @@ Desde la raíz del repositorio:
 
 ```powershell
 cd backend
-py -3.11 -m venv .venv
+py -3.12 -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install -r requirements.txt
 Copy-Item .env.example .env
