@@ -458,7 +458,7 @@ La referencia `SipeipApiEssentialTests.test_reporte_no_filtra_datos_de_otra_inst
 Comprueba que el reporte de planes de un usuario externo excluye registros de otra institución y que cambiar el filtro `entidad` no permite obtenerlos. El resultado esperado incluye el nombre de la prueba seguido de `ok` y termina con:
 
 ```text
-Ran 1 test in ....
+Ran 1 test in ...
 
 OK
 ``
