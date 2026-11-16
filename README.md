@@ -78,7 +78,7 @@ Entidad institucional
         └── ODS
 ```
 
-Cada meta contribuye a un único objetivo estratégico principal. Un objetivo puede agrupar varias metas y conectarlas con el PND y los ODS mediante la matriz de alineación. Esta estructura evita duplicar metas o avances y permite consultar la contribución institucional desde ambos módulos.
+Cada meta contribuye a un único objetivo estratégico principal. Un objetivo puede agrupar varias metas, conectarlas con el PND y los ODS mediante la matriz de alineación. Esta estructura evita duplicar metas o avances y permite consultar la contribución institucional desde ambos módulos.
 
 El plan y el objetivo seleccionados para una meta deben pertenecer a la misma entidad. Los objetivos inactivos se conservan en registros históricos, pero no pueden utilizarse para crear, reasignar ni activar metas.
 
