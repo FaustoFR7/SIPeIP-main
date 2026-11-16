@@ -458,45 +458,9 @@ La referencia `SipeipApiEssentialTests.test_reporte_no_filtra_datos_de_otra_inst
 Comprueba que el reporte de planes de un usuario externo excluye registros de otra institución y que cambiar el filtro `entidad` no permite obtenerlos. El resultado esperado incluye el nombre de la prueba seguido de `ok` y termina con:
 
 ```text
-Ran 1 test in ...
-
-OK
+backend/tests/test_flujo_planificacion_funcional.py
+backend/tests/test_seguimiento_metas.py
 ```
-
-Para otro caso del Excel, consulte las columnas **Archivo** y **Clase y método** de la hoja **Pruebas automatizadas**. Convierta el archivo en su módulo de Python: quite `backend/` y `.py`, y sustituya `/` por `.`. Añada un punto y la clase y método indicados. Esa referencia completa sustituye a `tests.test_api_essential.SipeipApiEssentialTests.test_reporte_no_filtra_datos_de_otra_institucion` en el comando anterior; conserve las demás opciones.
-
-### Localizar las pruebas y ejecutar el flujo funcional
-
-| Archivo | Comprobaciones |
-| --- | --- |
-| [test_api_essential.py](backend/tests/test_api_essential.py) | Sesión, CSRF, permisos, aislamiento institucional, relaciones, transiciones, eliminación protegida y reportes. |
-| [test_flujo_planificacion_funcional.py](backend/tests/test_flujo_planificacion_funcional.py) | Flujo de creación, alineación, revisión, validación, aprobación y seguimiento de un plan mediante la API, con sesión y CSRF. |
-| [test_seguimiento_metas.py](backend/tests/test_seguimiento_metas.py) | Cálculo de progreso, cierre de metas y conservación de datos durante la migración de seguimiento. |
-
-Para ejecutar solo el flujo funcional de planificación:
-
-```powershell
-.\.venv\Scripts\python.exe manage.py test tests.test_flujo_planificacion_funcional --settings=config.settings_test --verbosity 2
-```
-
-Actualmente ese archivo contiene un caso que recorre el flujo completo; el resumen esperado es `Ran 1 test` y `OK`. También puede ejecutar los otros archivos utilizando `tests.test_api_essential` o `tests.test_seguimiento_metas` en lugar de `tests.test_flujo_planificacion_funcional`.
-
-### Interpretar y conservar el resultado
-
-- `ok` junto a un caso: sus comprobaciones pasaron.
-- `OK` al final: las pruebas ejecutadas terminaron correctamente. Confirme también la cantidad de casos; `Ran 0 tests` no verifica ninguno. Si se informa `skipped`, esos casos fueron omitidos y no deben registrarse como superados.
-- `FAIL`: una comprobación obtuvo un resultado distinto al esperado. El detalle identifica el caso y la comparación que falló.
-- `ERROR`: una prueba no pudo completarse por una excepción o un problema de preparación. Revise el mensaje y el archivo indicados antes de repetirla.
-
-El mensaje `System check identified no issues` corresponde a la revisión de configuración de Django; por sí solo no confirma que las pruebas hayan pasado.
-
-Si no se encuentra `manage.py`, compruebe que la terminal esté en `backend`. Si no existe `.venv` o aparece `No module named django`, revise la instalación del entorno y sus dependencias. Si se solicita `SECRET_KEY`, revise la configuración local descrita al inicio de esta sección.
-
-Para conservar evidencia, guarde la salida de la terminal junto con el comando, la fecha y la versión utilizada. Puede consultar la versión con `git rev-parse --short HEAD`. No adjunte `.env` ni credenciales. El estado **Superada** del Excel corresponde a la ejecución registrada en su fecha y no se actualiza automáticamente al repetir estos comandos.
-
-Esta suite comprueba los casos definidos en el backend, incluido el flujo funcional por API. No abre un navegador ni verifica el diseño visual. Las comprobaciones de pantallas, formularios y navegación se realizan con la [validación manual recomendada](#validación-manual-recomendada). La ejecución con SQLite tampoco sustituye una validación específica sobre PostgreSQL.
-
-## Pruebas manuales con Postman
 
 La colección Postman reproducible se encuentra en:
 
